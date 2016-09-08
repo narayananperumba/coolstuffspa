@@ -1,0 +1,110 @@
+/* Master Styles */
+body{
+	margin: 0 8em; 
+}
+.container-fluid.page-container, .row.items{
+	margin: 0;
+	padding: 0;
+}
+.items .item-container{ 
+	transition: all 0.5s ease;
+}
+.items .item:hover{
+	-webkit-box-shadow: 2px 2px 2px 2px #efd4ac;
+    -moz-box-shadow: 2px 2px 2px 2px #efd4ac;
+    box-shadow: 2px 2px 2px 2px #efd4ac;
+}
+.items .item{
+	min-height: 230px;
+	border: 1px solid #ddd;
+	margin: 0 7px;
+	transition: all 0.5s ease 0s;
+	overflow: hidden;
+	margin-bottom: 15px;
+	cursor: pointer;
+}
+.items .itemimage{
+	background-image: url("app/assets/img/default.jpg");
+	background-repeat: no-repeat;
+    height: 175;
+    background-size: cover;
+    max-width: 100%;
+    max-height: 100%;
+    background-position: center center;
+}
+.itemimage.viewmore{
+	background-image: url("app/assets/img/viewmore.png");
+	background-size: contain;
+	min-height: 205px;
+    border: 2px dashed #9E9E9E;
+    margin: 15px;
+    transition: all 0.5s ease;
+}
+.item .itemimage.viewmore:hover{
+    border-radius:30%;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.items .rating{
+	background-image: url("app/assets/img/star.png");
+	background-repeat: no-repeat;
+    height: 26px;
+    background-size: contain;
+    max-width: 100%;
+    max-height: 100%;
+    background-position: right;
+    position: relative;
+    margin: 1%;
+    padding: 0;
+    width: 100px;
+    float: right;
+}
+.items .info-block{
+	background: #fff;
+	overflow: hidden;
+	padding: 5px;
+}
+.items .info-block .name, .items .info-block .price{
+	font-size: 14px;
+	white-space: nowrap;
+}
+.layer{
+width: 100%;
+height: 100%;
+background: rgba(256,256,256,0.85);
+top: 0;
+right: 0;
+position: absolute;
+z-index: 200;
+float: right;
+}
+.info-top{
+	margin: 0px;
+	padding: 0px;
+}
+.info-top div{
+	padding: 4px 0;
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+	font-size: 16px;
+}
+.info-top .counter{
+	background: #ff8a00;
+}
+.info-top .offer{
+	background: #db2e21;
+}
+.navbar-default .navbar-brand, .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover{
+	color: #fff;
+}
+.navbar-default{
+	background: #ff8a00;
+}
+
+@media screen and (max-width:768px) {
+body{
+	margin: 0 1em;
+}
+}
